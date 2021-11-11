@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background-image: url(./car-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 102px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.content {
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+}
+
+.content h1 {
+    color: cyan;
+    margin-bottom: 0;
+}
+
+.content p {
+    margin-top: 0;
+}
+
+.highlight {
+    text-decoration: none;
+    color: white;
+    background-color: cyan;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer strong {
+    color: cyan;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width:700px) {
+    .content {
+        font-size: 1.4rem;
+        margin: 2rem auto 0;
+    }
+    nav .logo {
+        font-size: 1.4rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    nav ul .highlight {
+        display: none;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    footer li {
+        text-align: center;
+    }
+}
